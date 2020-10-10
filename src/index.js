@@ -272,18 +272,21 @@ module.exports = function toReadable (number) {
 							break;
 						}
 						case '1': {
-							if(strNum[0] === '1' && strNum[i] === '0') {
-								readableNumber += 'ten';
-							} else if(strNum[0] === '1') {
+							if(strNum[0] === '1') {
 								readableNumber += 'eleven';
 							} else {
 								readableNumber += ' one';
 							}
 							break;
 						}
-						case '0':
-							readableNumber += ''
+						case '0': {
+							if(strNum[0] === '1' && strNum[i] === '0') {
+								readableNumber += 'ten';
+							} {
+								readableNumber += '';
+							}
 							break;
+						}
 					}
 				}
 			}
