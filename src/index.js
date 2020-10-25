@@ -1,15 +1,5 @@
 module.exports = function toReadable (number) {
 	
-	let one;
-	let two;
-	let three;
-	let four;
-	let five;
-	let six;
-	let seven;
-	let eight;
-	let nine;
-	let ten;
 	
 	const strNum = number.toString();
 	const length = strNum.length;
